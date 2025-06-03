@@ -1,0 +1,92 @@
+        * {
+            margin: 0;
+        }
+
+        div {
+            font-variant: small-caps;
+        }
+
+        .c1 {
+            grid-area: PROFOUNDGRID;
+        }
+
+        .c12 {
+            grid-area: A;
+        }
+
+        .c2 {
+            grid-area: RESPONSIVE;
+        }
+
+        .c3 {
+            grid-area: SEMANTIC;
+        }
+
+        .c4 {
+            grid-area: PRECISE;
+        }
+
+        .c5 {
+            grid-area: Videos;
+        }
+
+        .c6 {
+            grid-area: Video;
+        }
+
+        .c7 {
+            grid-area: The;
+        }
+
+        .ab {
+            grid-area: EXAMPLE;
+        }
+
+        .b1 {
+            grid-area: Videos;
+        }
+
+        .b2 {
+            grid-area: Video;
+        }
+
+        .b3 {
+            grid-area: The;
+        }
+
+        .p {
+            display: grid;
+            grid-template-areas: 'PROFOUNDGRID PROFOUNDGRID PROFOUNDGRID PROFOUNDGRID PROFOUNDGRID PROFOUNDGRID'
+                'A A A A A A'
+                'RESPONSIVE RESPONSIVE SEMANTIC SEMANTIC PRECISE PRECISE'
+                'Videos Videos Video Video The The'
+                'footer footer footer footer footer footer';
+            background-color: yellow;
+            gap: 4px;
+        }
+
+        .p>div {
+            padding: 5px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        div>.c5,
+        div>.c6,
+        div>.c7{
+            text-align: justify;padding-left: 5px;padding-right: 5px;
+        }
+
+        .p1 {
+            display: grid;
+            grid-template-areas: 'EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE' 'Videos Videos Video Video The The';
+           
+            padding: 0px;
+            gap: 4px;
+        }
+
+        .p1>div {
+            padding: 5px 0;
+            text-align: center;
+            background-color: yellow;
+        }
